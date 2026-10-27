@@ -1,134 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>SOURLOVE — Artisan Sourdough Bakery</title>
   <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-<header>
-  <div class="header-inner">
-    <div class="brand">
-      <span class="brand-title">SOURLOVE</span>
-      <span class="brand-subtitle">Artisan sourdough bakery · Waterlooville, Hampshire</span>
-    </div>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="menu.html">Menu</a></li>
-        <li><a href="order.html">Order</a></li>
-        <li><a href="markets.html">Markets</a></li>
-        <li><a href="reviews.html">Reviews</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
 
-<main>
-  <section class="hero">
-    <div class="hero-text">
-      <h1>Handcrafted sourdough, baked with love.</h1>
-      <p>SOURLOVE is a small artisan bakery in Waterlooville, Hampshire, specialising in sourdough bread and handmade baked goods.</p>
-      <p>From classic loaves to focaccia, muffins and cookies, every bake is prepared with care, time and tradition.</p>
-      <div class="hero-actions">
-        <a href="order.html" class="btn btn-primary">Order now</a>
-        <a href="menu.html" class="btn btn-outline">View full menu</a>
-        <a href="reviews.html" class="btn btn-outline">Customer reviews</a>
+  <header class="header">
+    <div class="header-inner">
+      <div class="brand">
+        <span class="brand-title">SOURLOVE</span>
+        <span class="brand-subtitle">Artisan sourdough bakery · Waterlooville, Hampshire</span>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="order.html">Order</a></li>
+          <li><a href="markets.html">Markets</a></li>
+          <li><a href="reviews.html">Reviews</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- RUSTIC HERO -->
+    <section class="hero">
+
+      <div class="hero-image">
+        <img src="images/Sourlovelogo_cream.png" alt="SOURLOVE Artisan Bakery">
+      </div>
+
+      <div class="hero-text">
+        <h1>Handcrafted sourdough, baked with love.</h1>
+
+        <p>Slow‑fermented. Naturally leavened. Made fresh every day.</p>
+
+        <div class="hero-actions">
+          <a href="order.html" class="btn btn-primary">Order now</a>
+          <a href="menu.html" class="btn btn-outline">View menu</a>
+        </div>
+      </div>
+
+    </section>
+
+
+    <!-- FEATURED BAKES -->
+    <section class="section">
+      <div class="section-header">
+        <h2>Featured bakes</h2>
+        <p>A taste of what we’re baking at SOURLOVE.</p>
+      </div>
+
+      <div class="grid grid-2">
+        <article class="card">
+          <h3>Classic Sourdough</h3>
+          <p>Traditional loaf with crisp crust and open crumb.</p>
+          <p><strong>£5.00</strong></p>
+        </article>
+
+        <article class="card">
+          <h3>Olive Oil & Rosemary Sourdough</h3>
+          <p>Fragrant loaf enriched with olive oil and rosemary.</p>
+          <p><strong>£6.00</strong></p>
+        </article>
+
+        <article class="card">
+          <h3>Chorizo & Olive Focaccia</h3>
+          <p>Soft focaccia topped with Portuguese chorizo and olives.</p>
+          <p><strong>£4.50</strong></p>
+        </article>
+
+        <article class="card">
+          <h3>Sourdough Chocolate Muffins</h3>
+          <p>Rich chocolate muffins made with sourdough.</p>
+          <p><strong>£2.50 (pack of 2)</strong></p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ORDERING -->
+    <section class="section">
+      <div class="section-header">
+        <h2>How ordering works</h2>
+        <p>Simple pre‑orders with collection at markets and the Bake Shed.</p>
+      </div>
+
+      <div class="card">
+        <p><strong>1.</strong> Browse the <a href="menu.html">menu</a>.</p>
+        <p><strong>2.</strong> Submit an order request on the <a href="order.html">Order page</a>.</p>
+        <p><strong>3.</strong> Choose a collection point.</p>
+        <p><strong>4.</strong> Wait for confirmation.</p>
+      </div>
+    </section>
+
+    <!-- MARKETS -->
+    <section class="section">
+      <div class="section-header">
+        <h2>Upcoming markets</h2>
+        <p>Find SOURLOVE at local markets and events.</p>
+      </div>
+
+      <div class="market-list">
+        <div class="market-item">
+          <h3>Waterlooville Precinct Market</h3>
+          <div class="market-meta">Dates to be confirmed.</div>
+          <p>Fresh sourdough, focaccia and sweet bakes.</p>
+        </div>
+
+        <div class="market-item">
+          <h3>Bake Shed, Waterlooville</h3>
+          <div class="market-meta">Collection point for pre‑orders.</div>
+          <p>Perfect for regular customers.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- STORY -->
+    <section class="section">
+      <div class="section-header">
+        <h2>Our story</h2>
+        <p>The passion behind SOURLOVE.</p>
+      </div>
+
+      <div class="card">
+        <p>SOURLOVE is a small artisan bakery based in Waterlooville, Hampshire.</p>
+        <p>We specialise in sourdough bread and handmade baked goods, using traditional fermentation techniques.</p>
+        <p>Every bake is prepared with care, dedication and a passion for real bread.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-contact">
+        <span><strong>Contact</strong></span>
+        <span>Email: <a href="mailto:info@sourlove.co.uk">info@sourlove.co.uk</a></span>
+        <span>Waterlooville, Hampshire</span>
+      </div>
+
+      <div class="footer-social">
+        <span><strong>Social</strong></span>
+        <a href="#">Instagram</a>
+        <a href="#">TikTok</a>
       </div>
     </div>
-    <div class="hero-image">
-      Artisan sourdough hero image<br>(replace with real photo)
-    </div>
-  </section>
+  </footer>
 
-  <section class="section">
-    <div class="section-header">
-      <h2>Featured bakes</h2>
-      <p>A taste of what we’re baking at SOURLOVE.</p>
-    </div>
-    <div class="grid grid-2">
-      <article class="card">
-        <h3>Classic Sourdough</h3>
-        <p>Traditional sourdough loaf with a crisp crust and open crumb.</p>
-        <p><strong>£5.00</strong></p>
-      </article>
-      <article class="card">
-        <h3>Olive Oil & Rosemary Sourdough</h3>
-        <p>Fragrant loaf enriched with olive oil and fresh rosemary.</p>
-        <p><strong>£6.00</strong></p>
-      </article>
-      <article class="card">
-        <h3>Chorizo & Olive Focaccia</h3>
-        <p>Soft focaccia topped with Portuguese chorizo and olives.</p>
-        <p><strong>£4.50</strong></p>
-      </article>
-      <article class="card">
-        <h3>Sourdough Chocolate Muffins</h3>
-        <p>Rich chocolate muffins made with sourdough for extra depth of flavour.</p>
-        <p><strong>£2.50 (pack of 2)</strong></p>
-      </article>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="section-header">
-      <h2>How ordering works</h2>
-      <p>Simple pre‑orders with collection at markets and the Bake Shed.</p>
-    </div>
-    <div class="card">
-      <p><strong>1.</strong> Browse the <a href="menu.html">menu</a> and choose your products.</p>
-      <p><strong>2.</strong> Submit an order request on the <a href="order.html">Order page</a> or via WhatsApp.</p>
-      <p><strong>3.</strong> Choose a collection point (Waterlooville markets or the Bake Shed).</p>
-      <p><strong>4.</strong> Wait for confirmation — your order is only confirmed once SOURLOVE accepts it.</p>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="section-header">
-      <h2>Upcoming markets</h2>
-      <p>Find SOURLOVE at local markets and events.</p>
-    </div>
-    <div class="market-list">
-      <div class="market-item">
-        <h3>Waterlooville Precinct Market</h3>
-        <div class="market-meta">Dates and times to be confirmed.</div>
-        <p>Artisan sourdough loaves, focaccia and sweet bakes available for pre‑order and on the day.</p>
-      </div>
-      <div class="market-item">
-        <h3>Bake Shed, Waterlooville</h3>
-        <div class="market-meta">Collection point for pre‑orders. Schedule to be confirmed.</div>
-        <p>Ideal for regular customers collecting their favourite SOURLOVE bakes.</p>
-      </div>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="section-header">
-      <h2>Our story</h2>
-      <p>The passion behind SOURLOVE.</p>
-    </div>
-    <div class="card">
-      <p>SOURLOVE is a small artisan bakery based in Waterlooville, Hampshire, United Kingdom.</p>
-      <p>We specialise in sourdough bread and handmade baked goods, combining traditional fermentation techniques with flavours that make every bake special.</p>
-      <p>From our classic sourdough loaf to our flavourful speciality breads, focaccia and sweet treats, every product is prepared with care, dedication and a passion for baking.</p>
-      <p>We believe great bread takes time, care and love. That is what we want to share with every customer.</p>
-    </div>
-  </section>
-</main>
-
-<footer>
-  <div class="footer-inner">
-    <div class="footer-contact">
-      <span><strong>Contact</strong></span>
-      <span>Email: <a href="mailto:info@sourlove.co.uk">info@sourlove.co.uk</a> (to be confirmed)</span>
-      <span>Location: Waterlooville, Hampshire, United Kingdom</span>
-    </div>
-    <div class="footer-social">
-      <span><strong>Social</strong> </span>
-      <a href="#" aria-label="Instagram">@sourlove2026</a>
-      <a href="#" aria-label="TikTok">TikTok (link to be confirmed)</a>
-    </div>
-  </div>
-</footer>
 </body>
+
 </html>
