@@ -1,98 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>SOURLOVE — Order</title>
   <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-<header>
-  <div class="header-inner">
-    <div class="brand">
-      <span class="brand-title">SOURLOVE</span>
-      <span class="brand-subtitle">Artisan sourdough bakery · Waterlooville, Hampshire</span>
-    </div>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="menu.html">Menu</a></li>
-        <li><a href="order.html">Order</a></li>
-        <li><a href="markets.html">Markets</a></li>
-        <li><a href="reviews.html">Reviews</a></li>
-      </ul>
-    </nav>
+  <div class="page-container">
+    <div id="site-header"></div>
+
+    <main>
+      <section class="section">
+        <div class="section-header">
+          <h2>Place an order request</h2>
+          <p>Your order is confirmed only once SOURLOVE accepts it.</p>
+        </div>
+
+        <div class="card">
+          <p style="font-size:0.9rem;color:#7a6a5f;">
+            Start with a simple order request form. Payments and automated confirmations can be added later if needed.
+          </p>
+
+          <!-- This form is static; you can later connect it to email or a backend if desired -->
+          <form>
+            <div>
+              <label for="name">Name</label>
+              <input id="name" type="text" name="name" required>
+            </div>
+            <div>
+              <label for="email">Email</label>
+              <input id="email" type="email" name="email" required>
+            </div>
+            <div>
+              <label for="products">Products and quantities</label>
+              <textarea id="products" name="products" placeholder="e.g. 1x Classic Sourdough, 2x Portuguese Chorizo Bun"
+                required></textarea>
+            </div>
+            <div>
+              <label for="collection">Collection point</label>
+              <select id="collection" name="collection" required>
+                <option value="">Select a collection point</option>
+                <option value="waterlooville-market">Waterlooville Precinct Market</option>
+                <option value="bake-shed">Bake Shed, Waterlooville</option>
+                <option value="other-market">Other confirmed market</option>
+              </select>
+            </div>
+            <div>
+              <label for="date">Preferred collection date</label>
+              <input id="date" type="text" name="date" placeholder="e.g. Saturday 12 October">
+            </div>
+            <div>
+              <label for="notes">Notes</label>
+              <textarea id="notes" name="notes" placeholder="Allergies, special requests, or questions"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit order request</button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <div id="site-footer"></div>
   </div>
-</header>
-
-<main>
-  <section class="section">
-    <div class="section-header">
-      <h2>Place an order request</h2>
-      <p>Your order is confirmed only once SOURLOVE accepts it.</p>
-    </div>
-
-    <div class="card">
-      <p style="font-size:0.9rem;color:#7a6a5f;">
-        Start with a simple order request form. Payments and automated confirmations can be added later if needed.
-      </p>
-
-      <!-- This form is static; you can later connect it to email or a backend if desired -->
-      <form>
-        <div>
-          <label for="name">Name</label>
-          <input id="name" type="text" name="name" required>
-        </div>
-        <div>
-          <label for="email">Email</label>
-          <input id="email" type="email" name="email" required>
-        </div>
-        <div>
-          <label for="products">Products and quantities</label>
-          <textarea id="products" name="products" placeholder="e.g. 1x Classic Sourdough, 2x Portuguese Chorizo Bun" required></textarea>
-        </div>
-        <div>
-          <label for="collection">Collection point</label>
-          <select id="collection" name="collection" required>
-            <option value="">Select a collection point</option>
-            <option value="waterlooville-market">Waterlooville Precinct Market</option>
-            <option value="bake-shed">Bake Shed, Waterlooville</option>
-            <option value="other-market">Other confirmed market</option>
-          </select>
-        </div>
-        <div>
-          <label for="date">Preferred collection date</label>
-          <input id="date" type="text" name="date" placeholder="e.g. Saturday 12 October">
-        </div>
-        <div>
-          <label for="notes">Notes</label>
-          <textarea id="notes" name="notes" placeholder="Allergies, special requests, or questions"></textarea>
-        </div>
-        <button type="submit" class="btn btn-primary">Submit order request</button>
-      </form>
-
-      <p style="margin-top:0.75rem;font-size:0.85rem;color:#7a6a5f;">
-        This form is a starting point. At launch, you can also offer ordering via WhatsApp or social media:
-        <br>
-        <strong>WhatsApp:</strong> link to be confirmed.
-      </p>
-    </div>
-  </section>
-</main>
-
-<footer>
-  <div class="footer-inner">
-    <div class="footer-contact">
-      <span><strong>Contact</strong></span>
-      <span>Email: <a href="mailto:info@sourlove.co.uk">info@sourlove.co.uk</a> (to be confirmed)</span>
-      <span>Location: Waterlooville, Hampshire, United Kingdom</span>
-    </div>
-    <div class="footer-social">
-      <span><strong>Social</strong> </span>
-      <a href="#" aria-label="Instagram">@sourlove2026</a>
-      <a href="#" aria-label="TikTok">TikTok (link to be confirmed)</a>
-    </div>
-  </div>
-</footer>
+  <script src="js/layout.js"></script>
 </body>
+
 </html>
 Li

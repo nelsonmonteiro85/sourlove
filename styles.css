@@ -19,7 +19,24 @@ body {
   margin: 0;
   font-family: var(--font-ui);
   color: var(--text);
+  background: #eee8dc;
+}
+
+.page-container {
+  width: 100%;
+  max-width: 1200px;
+  /* min-height: 100vh; */
+  margin: 0 auto;
   background: var(--bg);
+  display: flex;
+  flex-direction: column;
+
+  box-shadow:
+    -10px 0 20px -10px rgba(0, 49, 53, 0.5),
+    10px 0 20px -10px rgba(0, 49, 53, 0.5);
+
+  border-radius: 0 0 18px 18px;
+  overflow: hidden;
 }
 
 a {
@@ -43,6 +60,42 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.header-inner nav {
+  width: 100%;
+}
+
+.header-inner nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.header-inner nav a {
+  font-family: var(--font-main);
+  font-size: 1.1rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--accent-dark);
+  padding: 0.2rem 0;
+  border-bottom: 3px solid transparent;
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+.header-inner nav a:hover {
+  color: var(--accent);
+}
+
+.header-inner nav a[aria-current="page"] {
+  color: var(--text);
+  font-weight: 700;
+  border-bottom-color: var(--text);
 }
 
 .brand {
@@ -145,27 +198,23 @@ main {
 }
 
 .hero-image img {
-    width: 100%;
-    max-width: 500px;
-    height: auto;
+  width: 100%;
+  max-width: 500px;
+  height: auto;
 
-    -webkit-mask-image:
-        linear-gradient(
-            to right,
-            transparent 0%,
-            black 8%,
-            black 92%,
-            transparent 100%
-        );
+  -webkit-mask-image:
+    linear-gradient(to right,
+      transparent 0%,
+      black 8%,
+      black 92%,
+      transparent 100%);
 
-    mask-image:
-        linear-gradient(
-            to right,
-            transparent 0%,
-            black 8%,
-            black 92%,
-            transparent 100%
-        );
+  mask-image:
+    linear-gradient(to right,
+      transparent 0%,
+      black 8%,
+      black 92%,
+      transparent 100%);
 }
 
 /* Sections */
@@ -323,49 +372,105 @@ textarea {
 }
 
 /* Footer */
-
-footer {
+.footer {
+  background: var(--bg);
   border-top: 1px solid var(--border);
-  background: #fff;
-  margin-top: 2rem;
+  padding: 2rem 1rem;
+  margin-top: 3rem;
 }
 
 .footer-inner {
   max-width: 960px;
   margin: 0 auto;
-  padding: 1rem 1.5rem;
   display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
+  align-items: center;
   justify-content: space-between;
-  font-size: 0.85rem;
-  color: var(--muted);
+  gap: 1.5rem;
 }
 
-.footer-contact {
+.footer-brand {
+  font-family: var(--font-main);
+  font-size: 1.2rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: var(--accent-dark);
+}
+
+.footer-icons {
   display: flex;
-  flex-direction: column;
-  gap: 0.2rem;
+  align-items: center;
+  gap: 1.5rem;
 }
 
-.footer-social a {
-  margin-right: 0.5rem;
+.footer-icons a {
+  display: inline-flex;
+  color: var(--accent);
+  text-decoration: none;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.footer-icons svg {
+  width: 24px;
+  height: 24px;
+  display: block;
+}
+
+.footer-icons a:hover {
+  color: var(--text);
+  transform: translateY(-3px);
+}
+
+.footer-copyright {
+  color: var(--muted);
+  font-size: 0.8rem;
+}
+
+/* Mobile footer */
+@media (max-width: 600px) {
+  .footer-inner {
+    flex-direction: column;
+    gap: 1rem;
+  }
 }
 
 /* Responsive */
-
 @media (max-width: 720px) {
+
   .hero {
     grid-template-columns: 1fr;
   }
 
   .header-inner {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     gap: 0.75rem;
   }
 
-  nav ul {
-    flex-wrap: wrap;
+  .header-inner nav {
+    width: 100%;
   }
+
+  .header-inner nav ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.25rem;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+
+  .header-inner nav a {
+    font-size: 0.85rem;
+    letter-spacing: 0.5px;
+    white-space: nowrap;
+  }
+
+  .footer-inner {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
 }
