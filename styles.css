@@ -19,7 +19,7 @@ body {
   margin: 0;
   font-family: var(--font-ui);
   color: var(--text);
-  background: #eee8dc;
+  background: var(--bg);
 }
 
 .page-container {
@@ -32,8 +32,8 @@ body {
   flex-direction: column;
 
   box-shadow:
-    -10px 0 20px -10px rgba(0, 49, 53, 0.5),
-    10px 0 20px -10px rgba(0, 49, 53, 0.5);
+    -20px 20px 50px -5px rgba(83, 40, 4, 0.25),
+    10px 0 20px 10px rgba(83, 40, 4, 0.25);
 
   border-radius: 0 0 18px 18px;
   overflow: hidden;
